@@ -1,0 +1,13 @@
+file_format: "1"
+id: jarl
+name: Jarl_split
+type: shield
+url: https://github.com/bugvlopper/zmk-config-jarl/
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - jarl_left
+  - jarl_right
