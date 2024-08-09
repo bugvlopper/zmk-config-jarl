@@ -1,0 +1,9 @@
+display:
+  driver: ssd1306
+  rotation: 0
+  brightness: 1
+  pages:
+    - layer_state
+    - battery
+    - output
+    - profile

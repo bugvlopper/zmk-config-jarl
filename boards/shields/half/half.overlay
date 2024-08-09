@@ -2,6 +2,7 @@
 / {
 	chosen {
 		zmk,kscan = &kscan0;
+		zmk,display = &ssd1306;
 	};
 
 	kscan0: kscan_0 {
@@ -28,17 +29,17 @@
 	};
 
 	default_transform: keymap_transform_0 {
-		compatible = "zmk,matrix-transform";
-		columns = <6>;
-		rows = <4>;
+			   compatible = "zmk,matrix-transform";
+			   columns = <6>;
+			   rows = <4>;
 
-		map = <
-		RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)
-		RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5)
-		RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)
-		RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)
-		>;
-	};
+			   map = <
+				   RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)
+				   RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5)
+				   RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)
+				   RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)
+				   >;
+		   };
 
 	default_layout: default_layout {
 			compatible = "zmk,physical-layout";
@@ -46,4 +47,26 @@
 			transform = <&default_transform>;
 			kscan = <&kscan0>;
 		};
+	i2c1: &i2c1 {
+	      compatible = "nordic,nrf-twim";
+	      status = "okay";
+	      sda-pin = <017>;  // Remplacez par le pin SDA que vous utilisez
+	      scl-pin = <020>;  // Remplacez par le pin SCL que vous utilisez
+	      clock-frequency = <I2C_BITRATE_FAST>; // Utilisez la bonne fréquence d'horloge
+
+	ssd1306: ssd1306@3c {
+		 compatible = "ssd1306";
+		 reg = <0x3c>;  // Adresse I2C de l'écran OLED
+		 label = "SSD1306";
+		 width = <128>;
+		 height = <32>;
+		 segment-offset = <0>;
+		 page-offset = <0>;
+		 display-offset = <0>;
+		 multiplex-ratio = <31>;
+		 pre-charge-period = <0x2>;
+		 vcomh-level = <0x20>;
+		 reset-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;  // Pin de reset si nécessaire
+	 };
+      };
 };
