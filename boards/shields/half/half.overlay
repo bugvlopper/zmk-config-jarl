@@ -48,7 +48,7 @@
 			kscan = <&kscan0>;
 		};
 
-	i2c1: i2c1_half {
+	i2c1_half: i2c1 {
 	      status = "okay";
 	      sda-pin = <17>;  // Remplacez par le pin SDA que vous utilisez
 	      scl-pin = <20>;  // Remplacez par le pin SCL que vous utilisez
