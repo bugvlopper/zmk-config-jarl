@@ -2,7 +2,7 @@
 / {
 	chosen {
 		zmk,kscan = &kscan0;
-		zmk,display = &ssd1306;
+		zephyr,display = &ssd1306;
 	};
 
 	kscan0: kscan_0 {
@@ -48,14 +48,14 @@
 			kscan = <&kscan0>;
 		};
 
-	i2c1_half: i2c1 {
+	i2c1: &i2c1 {
 	      status = "okay";
 	      sda-pin = <17>;  // Remplacez par le pin SDA que vous utilisez
 	      scl-pin = <20>;  // Remplacez par le pin SCL que vous utilisez
 	      clock-frequency = <I2C_BITRATE_FAST>; // Utilisez la bonne fréquence d'horloge
 
 	ssd1306: ssd1306@3c {
-		 compatible = "ssd1306, ssd1306fb";
+		 compatible = "ssd1306fb";
 		 reg = <0x3c>;  // Adresse I2C de l'écran OLED
 		 label = "SSD1306";
 		 width = <128>;
