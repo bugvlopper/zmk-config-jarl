@@ -25,5 +25,5 @@
 
 
 include:
-  - board: nice_nano_vA
+  - board: nice_nano_v2
     shield: half
