@@ -18,7 +18,7 @@
 		};
 		conn_layer {
 			bindings = <
-				&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &kp R & kp T &kp Y
+				&bt BT_CLR &bt BT_PRV &bt BT_NXT &kp R & kp T &kp Y
 				&kp A &kp Z &kp E &kp R & kp T &kp Y
 				&kp A &kp Z &kp E &kp R & kp T &kp Y
 				&none &none &kp E &kp R & kp T &kp Y
