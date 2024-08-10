@@ -12,19 +12,19 @@
 				&kp ESC    &kp Q    &kp W    &kp E     &kp R     &kp T  
 				&kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G 
 				&kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B 
-				&none  &none   &kp RET    &kp SPACE &mo 1  &kp LSHIFT    
+				&none  &none   &kp RET    &kp SPACE &kp P  &kp LSHIFT    
 			>;
 
 		};
-		layer {
-			
-			bindings = <
-				&bt BT_CLR_ALL    &bt BT_SEL 0    &bt BT_SEL 1    &kp E     &kp R     &kp T  
-				&kp TAB    &bt BT_CLR    &kp S    &kp D     &kp F     &kp G 
-				&kp LSHIFT &bt BT_DISC    &kp X    &kp C     &kp V     &kp B 
-				&none  &none   &kp RET    &kp SPACE &trans  &kp LSHIFT    
-			>;
-
-		};
+//		layer {
+//			
+//			bindings = <
+//				&bt BT_CLR_ALL    &bt BT_SEL 0    &bt BT_SEL 1    &kp E     &kp R     &kp T  
+//				&kp TAB    &bt BT_CLR    &kp S    &kp D     &kp F     &kp G 
+//				&kp LSHIFT &bt BT_DISC    &kp X    &kp C     &kp V     &kp B 
+//				&none  &none   &kp RET    &kp SPACE &trans  &kp LSHIFT    
+//			>;
+//
+//		};
 	};
 };
