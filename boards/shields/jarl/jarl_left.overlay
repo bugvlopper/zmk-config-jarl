@@ -1,4 +1,4 @@
-#include "Jarl.dtsi"
+#include "jarl.dtsi"
 
 &kscan0 {
 
