@@ -16,7 +16,7 @@
 			>;
 
 		};
-			default_layer {
+			next_layer {
 			
 			bindings = <
 				&kp ESC    &bt BT_CLR    &bt BT_PRV    &bt BT_NXT     &kp R     &kp T  
