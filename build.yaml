@@ -19,9 +19,9 @@
 #--
  include:
  - board: nice_nano_v2
-   shield: Jarl_left
+   shield: jarl_left
  - board: nice_nano_v2
-   shield: Jarl_right
+   shield: jarl_right
 
 
 #include:
