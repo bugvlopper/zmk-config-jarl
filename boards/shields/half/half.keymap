@@ -18,9 +18,12 @@
 		};
 		conn_layer {
 			bindings = <
+				&kp A &kp Z &kp E &kp R & kp T &kp Y
+        
 				&kp A &kp Z &kp E &kp R & kp T &kp Y 
+      
 				&kp A &kp Z &kp E &kp R & kp T &kp Y 
-				&kp A &kp Z &kp E &kp R & kp T &kp Y 
+				       
 				&none &none &kp E &kp R & kp T &kp Y 
 			>;
 		};
