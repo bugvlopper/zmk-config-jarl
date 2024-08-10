@@ -6,16 +6,22 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
-			// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-			// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
-			// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
-			// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
-			//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+			
 			bindings = <
 				&kp ESC    &kp Q    &kp W    &kp E     &kp R     &kp T  
 				&kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G 
 				&kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B 
-				&none  &none   &kp RET    &kp SPACE &kp ESC  &kp LSHIFT    
+				&none  &none   &kp RET    &kp SPACE &mo 1  &kp LSHIFT    
+			>;
+
+		};
+		bluetooth_layer {
+			
+			bindings = <
+				&bt BT_CLR_ALL    &bt BT_SEL 0    &bt BT_SEL 1    &kp E     &kp R     &kp T  
+				&kp TAB    &bt BT_CLR    &kp S    &kp D     &kp F     &kp G 
+				&kp LSHIFT &bt BT_DISC    &kp X    &kp C     &kp V     &kp B 
+				&none  &none   &kp RET    &kp SPACE &trans  &kp LSHIFT    
 			>;
 
 		};
