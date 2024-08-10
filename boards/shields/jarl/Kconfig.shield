@@ -1,0 +1,4 @@
+config SHIELD_JARL_LEFT
+	def_bool $(shields_list_contains, jarl_left)
+config SHIELD_JARL_RIGHT
+	def_bool $(shields_list_contains, jarl_right)

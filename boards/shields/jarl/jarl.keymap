@@ -1,0 +1,30 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <di-bindings/zmk/outputs.h>
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+			bindings = <
+		&kp ESC      &kp Q     &kp W      &kp E     &kp R        &kp T          &kp Y      &kp U      &kp I        &kp O     &kp P      &kp BSPC     
+		&kp TAB      &kp A     &kp S      &kp D     &kp F        &kp G          &kp H      &kp J      &kp K        &kp L     &kp SEMI   &kp SQT     
+		&kp ESC      &kp Z     &kp X      &kp C     &kp V        &kp B          &kp N      &kp M      &kp COMMA    &kp DOT   &kp FSLH   &kp LT    
+		&none      &none     &kp X      &kp C     &kp V        &kp B          &kp N      &kp SPACE      &mo 1    &kp DOT   &none   &none    
+			>;
+
+		};
+
+		bluetooth_layer {
+			bindings = <
+		&bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &kp E  &out OUT_BLE &out OUT_USB   &kp Y      &kp U      &kp I        &kp O     &kp P      &kp BSPC     
+		&kp TAB      &kp A        &kp S        &kp D  &kp F        &kp G          &kp H      &kp J      &kp K        &kp L     &kp SEMI   &kp SQT     
+		&kp ESC      &kp Z        &kp X        &kp C  &kp V        &kp B          &kp N      &kp M      &kp COMMA    &kp DOT   &kp FSLH   &kp LT    
+		&kp ESC      &kp Z        &kp X        &kp C  &kp V        &kp B          &kp N      &kp M      &trans    &kp DOT   &none   &none    
+			>;
+
+		};
+	};
+};
