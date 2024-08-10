@@ -47,6 +47,7 @@
 			transform = <&default_transform>;
 			kscan = <&kscan0>;
 		};
+
 		};
 
 &pro_micro_i2c {
