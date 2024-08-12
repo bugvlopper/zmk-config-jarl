@@ -11,7 +11,7 @@
 			bindings = <
 		&kp ESC      &kp Q     &kp W      &kp E     &kp R        &kp T          &kp Y          &kp U      &kp I        &kp O     &kp P      &kp BSPC     
 		&kp TAB      &kp A     &kp S      &kp D     &kp F        &kp G          &kp H          &kp J      &kp K        &kp L     &kp SEMI   &kp SQT     
-		&kp LCTRL    &kp Z     &kp X      &kp C     &kp V        &kp B          &kp N          &kp M      &kp COMMA    &kp DOT   &kp FSLH   &kp LT    
+		&kp LCTRL    &kp Z     &kp X      &kp C     &kp V        &kp B          &kp N          &kp M      &kp COMMA    &kp DOT   &kp FSLH   &kp NUBS    
 		                       &mo 2      &kp GUI   &kp LALT     &kp LSHIFT     &mt RCTRL RET  &kp SPACE      &mo 1    &kp RALT       
 			>;
 
@@ -21,7 +21,7 @@
 			bindings = <
 		&kp ESC      &kp N1     &kp N2      &kp N3     &kp N4        &kp N5          &kp N6          &kp N7      &kp N8        &kp N9     &kp N0      &kp EQUAL     
 		&kp TAB      &kp N5     &kp RA(N4)      &kp RA(N3)     &kp RA(EQUAL)        &kp MINUS          &kp LEFT          &kp DOWN      &kp UP        &kp RIGHT     &kp STAR   &kp SQT     
-		&kp LCTRL    &kp RA(N2)     &kp RA(N5)      &kp RA(N0)     &kp RA(MINUS)        &kp RA(N8)          &kp LBRC          &kp RBRC      &kp COMMA    &kp DOT   &kp RA(NUBS)   &kp RA(LS(NUBS))    
+		&kp LCTRL    &kp RA(N2)     &kp RA(N5)      &kp RA(N0)     &kp RA(MINUS)        &kp RA(N8)          &kp CARRET          &kp DOLLAR      &kp COMMA    &kp DOT   &kp HOME   &kp END    
 		                       &mo 2      &kp GUI   &kp LALT     &kp LSHIFT     &mt RCTRL RET  &kp SPACE      &mo 1    &kp RALT       
 			>;
 
