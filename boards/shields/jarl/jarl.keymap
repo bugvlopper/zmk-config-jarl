@@ -29,7 +29,7 @@
 		bluetooth_layer {
 			bindings = <
 		&bt BT_CLR   &bt BT_PRV &bt BT_NXT &kp E  &out OUT_BLE &out OUT_USB       &kp Y      &kp U      &kp I        &kp O     &kp P      &kp BSPC     
-		&kp TAB      &kp A        &kp S        &kp D  &kp F    &kp BT_CLR_ALL     &kp H      &kp J      &kp K        &kp L     &kp SEMI   &kp SQT     
+		&kp TAB      &kp A        &kp S        &kp D  &kp F    &bt BT_CLR_ALL     &kp H      &kp J      &kp K        &kp L     &kp SEMI   &kp SQT     
 		&kp ESC      &kp Z        &kp X        &kp C  &kp V        &kp B          &kp N      &kp M      &kp COMMA    &kp DOT   &kp FSLH   &kp LT    
 		                          &trans        &kp C  &kp V        &kp B          &kp N      &kp M      &trans    &kp RALT       
 			>;
