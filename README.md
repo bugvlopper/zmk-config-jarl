@@ -1,0 +1,1 @@
+at this moment the config is not finish i start adding the underglow rgb for the sk6812 led but stop in the middle of the config do not use the config without finishing adding the led or pull the last gti commit where the firmware was working

@@ -36,4 +36,6 @@ if SHIELD_JARL_LEFT || SHIELD_JARL_RIGHT
 	endchoice
 
 	endif #LVGL
+
+	
 endif
